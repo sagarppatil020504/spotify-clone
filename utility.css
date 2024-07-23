@@ -1,0 +1,54 @@
+.flex{
+    display: flex;
+
+}
+.bg-black{
+    background-color: black;
+    color: white;
+}
+.bg-gray{
+    background-color: rgb(24, 24, 24 );
+    color: white;
+
+}
+.border{
+    border: 2px solid white ;
+}
+.invert{
+    filter: invert(1);
+}
+.symbol{
+    display: flex;
+    margin: 2%;padding: 2px;
+    border: 1pt solid rgb(43, 43, 43);
+    border-radius: 25px;
+}
+button{
+    background-color: black;
+    border-style: none;
+}
+.copeneffect{
+    
+}
+@keyframes button{
+    0%{
+        bottom: 130px;
+        opacity: 0%;
+    }
+    20%{
+        bottom: 135px;
+        opacity: 30%;
+    }
+    50%{
+        bottom: 140;
+        opacity: 50%;
+    }
+    80%{
+        bottom: 145px;
+        opacity: 80%;
+    }
+    100%{
+        bottom: 150px;
+        opacity: 100%;
+    }
+}

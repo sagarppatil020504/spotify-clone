@@ -1,0 +1,269 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: rgb(255, 255, 255);
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --gray: rgb(115, 115, 115);
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 99vw;height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+#sc1 {
+  width: 120px;
+}
+.left {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  gap: 10px;
+}
+.up,
+.down {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 20vw;
+  gap: 19px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 8pt;
+  padding: 30px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+li {
+  display: flex;
+  padding-bottom: 15px;
+  padding: 3px;
+  margin: 2px;
+  flex-direction: row;
+  gap: 19px;
+  align-items: center;
+}
+.down {
+  display: flex;
+  margin: 4px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+#g54 {
+  width: 20px;
+  display: flex;
+  align-content: flex-end;
+}
+
+.seprater {
+  width: 2px;
+  display: flex;
+  height: 100vh;
+  background-color: black;
+}
+.right {
+  position: relative;
+  flex-direction: row;
+  display: flex;
+  margin-top: 9px;
+  margin-bottom: 8px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 15pt;
+  padding: 8px;
+  width: 71vw;
+  height: 80vh;
+  justify-self: flex-end;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.lib,
+.your {
+  display: flex;
+  position: relative;
+  gap: 15px;
+  width: 20vw;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+.your {
+  position: relative;
+  display: flex;
+  width: 18vw;
+}
+.playlist{
+  display: flex;
+  padding: 10pt;
+  position: relative;
+  width: calc(auto+10vw);
+  overflow-y: scroll;
+  height: 50px;
+  border: 2px soild red ;
+  border-radius: 15pt;
+  background-color: rgb(108, 116, 116);
+}
+
+
+.lastpart {
+  display: grid;
+  font-size: 15px;
+  overflow: hidden;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 22vw;
+  grid-template-areas:
+    "l sp sp"
+    "main  article  side"
+    "lfoot lfoot lfoot "
+    "rfoot rfoot rfoot";
+  align-items: center;
+  grid-gap: 15px 20px;
+  justify-content: start;
+  justify-items: start;
+}
+.english {
+  border: 1px solid white;
+  border-radius: 20pt;
+  padding: 10px;
+  padding-left: 13px;
+  padding-right: 13px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.arrow,
+.but {
+  display: flex;
+}
+
+.but {
+  color: white;
+  font-size: 24px;
+  background-color: black;
+  display: flex;
+  gap: 15px;
+  border: 1px solid black;
+  border-radius: 25pt;
+  margin: 2px;
+  padding: 5px;
+}
+.navigation {
+  display: flex;
+  flex-direction: row;
+  position: sticky;
+  width: 100vw;
+  height: 10vh;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.card-container {
+  display: flex;
+  position: absolute;
+  width: 100vw;
+  top: 60px;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.listname {
+  margin: 2px;
+  font-size: 25px;
+  padding: 15px;
+}
+.cardsections {
+  display: flex;
+  width: 70vw;
+  height: auto;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.card-list {
+  display: flex;
+  width: auto;
+  height: 50vh;
+  gap: 15px;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  position: relative;
+  overflow: scroll;
+  background-color: rgb(19, 19, 19);
+}
+
+.image {
+  max-width: 150px;
+  max-height: 200px;
+  object-fit: contain;
+  border: 1pt solid rgb(23, 23, 23);
+  border-radius: 20px;
+}
+.card > * {
+  margin: 3px;
+  padding: 5px;
+}
+.card {
+  display: flex;
+  object-fit: contain;
+  position: relative;
+  width: fit-content;
+  height:fit-content;
+  flex-direction: column;
+  border: 1px solid rgb(21, 21, 21);
+  border-radius: 5px;
+}
+.songname,
+.songauthor {
+  margin: 2px;
+  padding: 5px;
+}
+.imagefile {
+  padding: 0;
+  margin: 0;
+}
+.play {
+  display: flex;
+  position: absolute;
+  top: 108px;
+  left: 105px;
+  width: 30px;
+  height: 30px;
+  opacity: 0%;
+  transition: all 1s ease-in-out;
+  animation: button 2s ease-in-out 0.1ms infinite forwards reverse;
+}
+
+.playbar{
+  display: flex;
+  color: cyan;
+  position: fixed;
+  width: 72vw;
+  height: 15vh;
+  top: 85vh;
+  left: 25vw;
+  background-color: rgb(0, 0, 0);
+  border: 1pt solid rgb(81, 81, 81);
+  border-radius: 5pt;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+.playop{
+  display: flex;
+
+  align-items: center;
+}
